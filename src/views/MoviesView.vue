@@ -37,7 +37,7 @@ onMounted(() => {
     </h1>
     <v-container v-else class="">
       <v-row no-gutters>
-        <v-col v-for="movie in movieList" :key="movie.id" cols="12" sm="4"
+        <v-col v-for="movie in movieList" :key="movie.id" cols="12" sm="6" md="4" lg="3" xs="12"
           ><MovieCard :movie="movie"></MovieCard>
         </v-col>
       </v-row>
