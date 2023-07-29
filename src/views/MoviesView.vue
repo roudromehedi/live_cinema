@@ -7,7 +7,7 @@ let isLoading = ref(true)
 let failedLoading = ref(false)
 
 onMounted(() => {
-  fetch('http://localhost:8000/movies')
+  fetch('https://live-cinema.onrender.com/movies')
     .then((response) => response.json())
 
     .then((apiMovies) => {
