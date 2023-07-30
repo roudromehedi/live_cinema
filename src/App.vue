@@ -9,6 +9,7 @@
       <v-btn text="Home" to="/" />
       <v-btn text="About" to="/about" />
       <v-btn text="Movies" to="/movies" />
+      <v-btn text="Bookings" to="/bookings" />
     </v-app-bar>
 
     <v-main>

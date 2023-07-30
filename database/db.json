@@ -1,39 +1,165 @@
 {
-    "movies": [
-        {
-            "id": 1,
-            "title": "The Lion King",
-            "year": "2020",
-            "runtime": "118 min",
-            "poster": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_SX300.jpg"
-        },
-        {
-            "id": 2,
-            "title": "Mowgli: Legend of the Jungle",
-            "year": "2018",
-            "runtime": "104 min",
-            "poster": "https://m.media-amazon.com/images/M/MV5BMjMzODc2NzU5MV5BMl5BanBnXkFtZTgwNTMwMTE3NjM@._V1_SX300.jpg"
-        },
-        {
-            "id": 3,
-            "title": "Doctor Strange",
-            "year": "2016",
-            "runtime": "115 min",
-            "poster": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg"
-        },
-        {
-            "id": 4,
-            "title": "John Wick",
-            "year": "2014",
-            "runtime": "101 min",
-            "poster": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
-        },
-        {
-            "id": 5,
-            "title": "The Notebook",
-            "year": "2004",
-            "runtime": "123 min",
-            "poster": "https://m.media-amazon.com/images/M/MV5BMjMzODc2NzU5MV5BMl5BanBnXkFtZTgwNTMwMTE3NjM@._V1_SX300.jpg"
-        }
-    ]
+  "movies": [
+    {
+      "id": 1,
+      "theaters": [
+        2,
+        9,
+        1
+      ],
+      "title": "The Lion King",
+      "year": "2020",
+      "runtime": "118 min",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_SX300.jpg"
+    },
+    {
+      "id": 2,
+      "theaters": [
+        4,
+        6,
+        7
+      ],
+      "title": "Mowgli: Legend of the Jungle",
+      "year": "2018",
+      "runtime": "104 min",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMzODc2NzU5MV5BMl5BanBnXkFtZTgwNTMwMTE3NjM@._V1_SX300.jpg"
+    },
+    {
+      "id": 3,
+      "theaters": [
+        5,
+        3,
+        11
+      ],
+      "title": "Doctor Strange",
+      "year": "2016",
+      "runtime": "115 min",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg"
+    },
+    {
+      "id": 4,
+      "theaters": [
+        12,
+        10,
+        8
+      ],
+      "title": "John Wick",
+      "year": "2014",
+      "runtime": "101 min",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
+    },
+    {
+      "id": 5,
+      "theaters": [
+        5,
+        1,
+        11
+      ],
+      "title": "The Notebook",
+      "year": "2004",
+      "runtime": "123 min",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMzODc2NzU5MV5BMl5BanBnXkFtZTgwNTMwMTE3NjM@._V1_SX300.jpg"
+    },
+    {
+      "id": 6,
+      "theaters": [
+        5,
+        3,
+        11
+      ],
+      "title": "The lords of the ring",
+      "year": "2018",
+      "runtime": "104 min",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMzODc2NzU5MV5BMl5BanBnXkFtZTgwNTMwMTE3NjM@._V1_SX300.jpg"
+    },
+    {
+      "id": 7,
+      "theaters": [
+        2,
+        3,
+        1
+      ],
+      "title": "New Movie",
+      "year": "2023",
+      "runtime": "120 min",
+      "poster": "https://example.com/new-movie-poster.jpg"
+    }
+  ],
+  "bookings": [
+    {
+      "movieId": 4,
+      "title": "John Wick",
+      "id": 9
+    },
+    {
+      "movieId": 2,
+      "title": "Mowgli: Legend of the Jungle",
+      "id": 10
+    },
+    {
+      "movieId": 3,
+      "title": "Doctor Strange",
+      "id": 11
+    },
+    {
+      "movieId": 6,
+      "title": "The lords of the ring",
+      "id": 12
+    },
+    {
+      "movieId": 5,
+      "title": "The Notebook",
+      "id": 13
+    }
+  ],
+  "theaters": [
+    {
+      "id": 1,
+      "theaterName": "Black Box",
+      "theaterType": "Luxury",
+      "seatingCapacity": 120,
+      "wheelChair": true,
+      "soundSystem": "Dolby Atmos",
+      "resolution": "4k",
+      "dimention": "3D",
+      "speakers": 18,
+      "screenSize": 96
+    },
+    {
+      "id": 2,
+      "theaterName": "Park House",
+      "theaterType": "Delux",
+      "seatingCapacity": 220,
+      "wheelChair": true,
+      "soundSystem": "Dolby Atmos",
+      "resolution": "4k",
+      "dimention": "3D",
+      "speakers": 42,
+      "screenSize": 206
+    },
+    {
+      "id": 3,
+      "theaterName": "Sky Dream",
+      "theaterType": "Premium",
+      "seatingCapacity": 90,
+      "wheelChair": true,
+      "soundSystem": "Dolby 5.1",
+      "resolution": "4k",
+      "dimention": "3D",
+      "speakers": 28,
+      "screenSize": 80
+    },
+    {
+      "id": 4,
+      "theaterName": "Forest Lounge",
+      "theaterType": "Comfort",
+      "seatingCapacity": 100,
+      "wheelChair": true,
+      "soundSystem": "Dolby 7.1",
+      "resolution": "4k",
+      "dimention": "3D",
+      "speakers": 30,
+      "screenSize": 109
+    }
+  ]
 }
